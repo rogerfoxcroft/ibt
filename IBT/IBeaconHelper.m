@@ -34,7 +34,7 @@
 
 - (void)startMonitoringForBeacons
 {
-    // Use a randomly generated UUID for this
+    // Use a hard-coded UUID for now
     NSString *uuidStr = @"38D50911-4901-4F56-8952-3C3ACD860E0B";
     
     // Convert this string into a NSUUID object
