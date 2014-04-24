@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Softfox. All rights reserved.
 //
 
-#import "com_softfox_ibtAppDelegate.h"
+#import "IBTAppDelegate.h"
 
-@implementation com_softfox_ibtAppDelegate
+@implementation IBTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

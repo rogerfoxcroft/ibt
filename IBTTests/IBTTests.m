@@ -7,8 +7,12 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <CoreLocation/CoreLocation.h>
+#import "IBeaconHelper.h"
 
-@interface IBTTests : XCTestCase
+@interface IBTTests : XCTestCase {
+    IBeaconHelper *helper;
+}
 
 @end
 
@@ -17,7 +21,11 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    if (!(helper = [[IBeaconHelper alloc] init:NULL]))
+    {
+        XCTFail(@"Failed to create helper (%s)", __PRETTY_FUNCTION__);
+    }
 }
 
 - (void)tearDown
@@ -26,9 +34,22 @@
     [super tearDown];
 }
 
-- (void)testExample
+
+- (void)testIBeaconRegionMonitoringAvailable
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    if (![CLLocationManager locationServicesEnabled])
+    {
+        XCTFail(@"Location services are not enabled (%s)", __PRETTY_FUNCTION__);
+    }
+    
+    // This test will fail if no Bluetooth 4 stack is set up to work with the simulator.
+    // It has to be an external USB bluetooth dongle, and this is not really supported by Apple
+    if (![CLLocationManager isRangingAvailable])
+    {
+        XCTFail(@"Ranging of iBeacons is not available (%s)", __PRETTY_FUNCTION__);
+        return;
+    }
 }
+
 
 @end

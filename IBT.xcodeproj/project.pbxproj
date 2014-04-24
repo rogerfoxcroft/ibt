@@ -12,16 +12,18 @@
 		DB7D259E190902DE00EBCE48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7D259D190902DE00EBCE48 /* UIKit.framework */; };
 		DB7D25A4190902DE00EBCE48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB7D25A2190902DE00EBCE48 /* InfoPlist.strings */; };
 		DB7D25A6190902DE00EBCE48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D25A5190902DE00EBCE48 /* main.m */; };
-		DB7D25AA190902DE00EBCE48 /* com_softfox_ibtAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D25A9190902DE00EBCE48 /* com_softfox_ibtAppDelegate.m */; };
+		DB7D25AA190902DE00EBCE48 /* IBTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D25A9190902DE00EBCE48 /* IBTAppDelegate.m */; };
 		DB7D25AD190902DE00EBCE48 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7D25AB190902DE00EBCE48 /* Main_iPhone.storyboard */; };
 		DB7D25B0190902DE00EBCE48 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7D25AE190902DE00EBCE48 /* Main_iPad.storyboard */; };
-		DB7D25B3190902DE00EBCE48 /* com_softfox_ibtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D25B2190902DE00EBCE48 /* com_softfox_ibtViewController.m */; };
+		DB7D25B3190902DE00EBCE48 /* IBTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D25B2190902DE00EBCE48 /* IBTViewController.m */; };
 		DB7D25B5190902DE00EBCE48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7D25B4190902DE00EBCE48 /* Images.xcassets */; };
 		DB7D25BC190902DE00EBCE48 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7D25BB190902DE00EBCE48 /* XCTest.framework */; };
 		DB7D25BD190902DE00EBCE48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7D2599190902DE00EBCE48 /* Foundation.framework */; };
 		DB7D25BE190902DE00EBCE48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7D259D190902DE00EBCE48 /* UIKit.framework */; };
 		DB7D25C6190902DE00EBCE48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB7D25C4190902DE00EBCE48 /* InfoPlist.strings */; };
 		DB7D25C8190902DE00EBCE48 /* IBTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D25C7190902DE00EBCE48 /* IBTTests.m */; };
+		DB7D25D219091A1C00EBCE48 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7D25D119091A1C00EBCE48 /* CoreLocation.framework */; };
+		DB7D25D719091ED100EBCE48 /* IBeaconHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D25D619091ED100EBCE48 /* IBeaconHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,18 +45,21 @@
 		DB7D25A3190902DE00EBCE48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB7D25A5190902DE00EBCE48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB7D25A7190902DE00EBCE48 /* IBT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBT-Prefix.pch"; sourceTree = "<group>"; };
-		DB7D25A8190902DE00EBCE48 /* com_softfox_ibtAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = com_softfox_ibtAppDelegate.h; sourceTree = "<group>"; };
-		DB7D25A9190902DE00EBCE48 /* com_softfox_ibtAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_softfox_ibtAppDelegate.m; sourceTree = "<group>"; };
+		DB7D25A8190902DE00EBCE48 /* IBTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTAppDelegate.h; sourceTree = "<group>"; };
+		DB7D25A9190902DE00EBCE48 /* IBTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTAppDelegate.m; sourceTree = "<group>"; };
 		DB7D25AC190902DE00EBCE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DB7D25AF190902DE00EBCE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		DB7D25B1190902DE00EBCE48 /* com_softfox_ibtViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = com_softfox_ibtViewController.h; sourceTree = "<group>"; };
-		DB7D25B2190902DE00EBCE48 /* com_softfox_ibtViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_softfox_ibtViewController.m; sourceTree = "<group>"; };
+		DB7D25B1190902DE00EBCE48 /* IBTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTViewController.h; sourceTree = "<group>"; };
+		DB7D25B2190902DE00EBCE48 /* IBTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTViewController.m; sourceTree = "<group>"; };
 		DB7D25B4190902DE00EBCE48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DB7D25BA190902DE00EBCE48 /* IBTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7D25BB190902DE00EBCE48 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DB7D25C3190902DE00EBCE48 /* IBTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBTTests-Info.plist"; sourceTree = "<group>"; };
 		DB7D25C5190902DE00EBCE48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB7D25C7190902DE00EBCE48 /* IBTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTTests.m; sourceTree = "<group>"; };
+		DB7D25D119091A1C00EBCE48 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DB7D25D619091ED100EBCE48 /* IBeaconHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBeaconHelper.m; sourceTree = "<group>"; };
+		DB7D25D819091FAC00EBCE48 /* IBeaconHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBeaconHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7D25D219091A1C00EBCE48 /* CoreLocation.framework in Frameworks */,
 				DB7D259C190902DE00EBCE48 /* CoreGraphics.framework in Frameworks */,
 				DB7D259E190902DE00EBCE48 /* UIKit.framework in Frameworks */,
 				DB7D259A190902DE00EBCE48 /* Foundation.framework in Frameworks */,
@@ -103,6 +109,7 @@
 		DB7D2598190902DE00EBCE48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB7D25D119091A1C00EBCE48 /* CoreLocation.framework */,
 				DB7D2599190902DE00EBCE48 /* Foundation.framework */,
 				DB7D259B190902DE00EBCE48 /* CoreGraphics.framework */,
 				DB7D259D190902DE00EBCE48 /* UIKit.framework */,
@@ -114,14 +121,16 @@
 		DB7D259F190902DE00EBCE48 /* IBT */ = {
 			isa = PBXGroup;
 			children = (
-				DB7D25A8190902DE00EBCE48 /* com_softfox_ibtAppDelegate.h */,
-				DB7D25A9190902DE00EBCE48 /* com_softfox_ibtAppDelegate.m */,
+				DB7D25A8190902DE00EBCE48 /* IBTAppDelegate.h */,
+				DB7D25A9190902DE00EBCE48 /* IBTAppDelegate.m */,
 				DB7D25AB190902DE00EBCE48 /* Main_iPhone.storyboard */,
 				DB7D25AE190902DE00EBCE48 /* Main_iPad.storyboard */,
-				DB7D25B1190902DE00EBCE48 /* com_softfox_ibtViewController.h */,
-				DB7D25B2190902DE00EBCE48 /* com_softfox_ibtViewController.m */,
+				DB7D25B1190902DE00EBCE48 /* IBTViewController.h */,
+				DB7D25B2190902DE00EBCE48 /* IBTViewController.m */,
 				DB7D25B4190902DE00EBCE48 /* Images.xcassets */,
 				DB7D25A0190902DE00EBCE48 /* Supporting Files */,
+				DB7D25D619091ED100EBCE48 /* IBeaconHelper.m */,
+				DB7D25D819091FAC00EBCE48 /* IBeaconHelper.h */,
 			);
 			path = IBT;
 			sourceTree = "<group>";
@@ -254,9 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB7D25AA190902DE00EBCE48 /* com_softfox_ibtAppDelegate.m in Sources */,
-				DB7D25B3190902DE00EBCE48 /* com_softfox_ibtViewController.m in Sources */,
+				DB7D25AA190902DE00EBCE48 /* IBTAppDelegate.m in Sources */,
+				DB7D25B3190902DE00EBCE48 /* IBTViewController.m in Sources */,
 				DB7D25A6190902DE00EBCE48 /* main.m in Sources */,
+				DB7D25D719091ED100EBCE48 /* IBeaconHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +404,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBT/IBT-Prefix.pch";
 				INFOPLIST_FILE = "IBT/IBT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,6 +418,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBT/IBT-Prefix.pch";
 				INFOPLIST_FILE = "IBT/IBT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
